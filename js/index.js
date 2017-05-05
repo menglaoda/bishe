@@ -93,7 +93,7 @@ $(function(){
 							return 0;
 						}else if($header_zuo_span.html()=="汽车系"){
 							return 1;
-						}else if($header_zuo_span.html()=="英语系"){
+						}else if($header_zuo_span.html()=="外语系"){
 							return 2;
 						}else if($header_zuo_span.html()=="机械系"){
 							return 3;
