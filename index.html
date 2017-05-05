@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-2.2.0.min.js"></script>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	</head>
+	<body>
+		<div class="denglu">
+			<h3>课堂点名系统</h3>
+			<div class="denglu_yanzheng">
+				<label for="yonghu">用户名:</label>
+				<input type="text" id="yonghu" />
+				<label for="mima">密码:</label>
+				<input type="password" id="mima"/>
+				<p class="denglu_tishi">用户名或密码不正确，请重新输入</p>
+			</div>
+			<div class="denglu_btn">用户登录</div>
+		</div>
+		<div class="box">
+			<div class="logo">
+				<img src="img/animal_1.gif"/>
+			</div>
+			<header class="header">
+				<div class="header_left">
+					<span class="header_span">系别：</span>
+				    <div class="header_da">
+				    	<div class="header_zuo">
+				    		<span>--</span>
+				    	</div>
+				    	<div class="header_you"></div>
+				    	<div class="xibie_liebiao"></div>
+				    </div>
+				</div>
+			    <div class="header_right">
+			    	<span class="header_span">班级：</span>
+			        <div class="header_banji" >
+				    	<div class="header_zuo_2">
+				    		<span>--</span>
+				    	</div>
+				    	<div class="header_you_2"></div>
+				    	<div class="xibie_liebiao_2"></div>
+				    </div>
+				    <div class="banji_tishi">请确定系别!</div>
+			    </div>      
+			</header>
+			<div class="mingdan" >
+				<h3>名单展示</h3>
+				<ul></ul>	
+			</div>
+			<div class="mingdan_2">
+				<h3>名单修改</h3>
+				<textarea class="textarea" autofocus></textarea>
+				<button class="button_baocun">保存</button>
+				<div class="people_num"><span>人数：</span><i>0</i></div>
+			</div>
+			<div class="menuKey">
+				<button class="menuKey_btn">操作菜单</button>
+				<div class="menuKey_liebiao">
+					<ul>
+						<li>抽取<input type="text" id="menuKey_val">人<button class="menuKey_qd">确定</button></li>
+						<li>其它...</li>
+					</ul>
+				</div>
+				<div class="menu_tishi"><span>我们的爱，可以不在回来！</span></div>
+			</div>
+			<div class="lucky">
+				<h3>幸运儿</h3>
+				<ul class="lucky_ul">
+					<!--<li class="luckyli">李希辰</li>
+					<li class="luckyli">张宇</li>
+					<li class="luckyli">张三辰</li>
+					<li class="luckyli">王大锤</li>
+					<li class="luckyli">及刚狼</li>-->
+				</ul>
+				<!--<div class="pingfen">
+					<ul>
+						<li class="pingfen_li">找帮手</li>
+						<li>评分</li>
+					</ul>
+				</div>-->
+				<!--<div class="pingfen_2">
+					<span>十分满意</span><span>满意</span><span>一般</span><span>不满意</span>
+				</div>-->
+				<div class="xuanzhuan">
+					<img src="img/xuanzhuan.png" />
+				</div>
+				<p class="baocun">保存</p>
+			</div>
+		</div>
+		<div class="yun">
+			<div class="yunduo">
+				<div class="sun">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="yudi">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="date"></div>
+			</div>
+		</div>
+		<div class="yuner">
+			<div class="yunduo_2"></div>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
+</html>
