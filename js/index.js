@@ -494,8 +494,11 @@ $(function(){
 					$menuKey_liebiao.hide();
 					$(".menu_tishi").hide();
 				})
-				$(".baocun").on("click",function(){//点击幸运儿下的保存按钮
-					$(".baocun").css("background","wheat");
+				$(".baocun").on("click",function(){//点击幸运儿下的保存按钮					
+					$(".baocun").css({"background":"wheat","-webkit-box-shadow":"2px 2px 2px 1px #ccc"});
+	            	setTimeout(function(){
+	            		$(".baocun").css({"background":"#eaeaea","-webkit-box-shadow":"0px 0px 0px 0px #ccc"});
+	            	},100)
 				})
 				
 				//云朵是出太阳还是下雨
