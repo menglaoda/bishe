@@ -22,8 +22,8 @@ $(function(){
 				var i=0;//限制系别的请求次数
 				var j=0;//限制班级的请求次数
 				var time;
-				var arr = [];//用来储存名单
-				var luckys = [];//幸运名单
+				var arr = [];//用来储存中文名字
+				var luckys = [];//用来储存对应的下标
 				var shuzhi=0;//输入框里的数值
 				var $button_baocun = $(".button_baocun");//保存按钮
 				var $textarea = $(".mingdan_2 .textarea");//文本域
@@ -279,7 +279,7 @@ $(function(){
 								console.log(luckys); 
 								// 生成随机数的方法 
 								function generateRandom(count){
-									var num = Math.round(Math.random()*arr.length);
+									var num = Math.floor(Math.random()*arr.length);
 								     for(var i = 0 ; i < luckys.length; i++){ 
 								          if(luckys[i] == num){ 
 								               return false; 
@@ -496,6 +496,9 @@ $(function(){
 				})
 				$(".baocun").on("click",function(){//点击幸运儿下的保存按钮					
 					$(".baocun").css({"background":"wheat","-webkit-box-shadow":"2px 2px 2px 1px #ccc"});
+					$(".pingfen").hide();//隐藏全部评分、找帮手
+			        $(".pingfen_2_hou").hide();//隐藏被找帮手的名字对应的十分满意、满意、一般、不满意
+			        $(".pingfen_2").hide();//隐藏全部十分满意、满意、一般、不满意
 	            	setTimeout(function(){
 	            		$(".baocun").css({"background":"#eaeaea","-webkit-box-shadow":"0px 0px 0px 0px #ccc"});
 	            	},100)
